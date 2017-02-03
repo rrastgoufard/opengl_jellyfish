@@ -38,3 +38,8 @@ inteded for anyone to see this, but I decided
 to make it public in case someone maybe gets
 some enjoyment from it.  
 
+
+
+Here's an album of screenshots that came from 
+this visualization.
+https://goo.gl/photos/wT5wF5CVu6wUc2X56
