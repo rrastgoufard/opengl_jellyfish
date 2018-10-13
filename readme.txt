@@ -17,8 +17,12 @@ of blending together, so they appear very
 bright!  Some colors look garish together,
 but others are really pleasing.
 
-This needs python 2, pyopengl, numpy, and
-pillow.  
+This needs python 3, pyopengl, numpy, and
+pillow.  All dependencies can be gotten
+using pipenv.
+
+Additionally, this needs freeGLUT.  Use your
+system's package manager for that.
 
 You need a mouse and keyboard if you want to
 interact with it.  There are two states,
