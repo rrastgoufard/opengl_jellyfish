@@ -424,27 +424,27 @@ class Context():
       self.screendepthbuffer,
       GL_COLOR_ATTACHMENT1)
     
-  def keyPressed( self, key, *args ):
-    #print( "key pressed:", args )
-    if key == '\x1b':
+  def keyPressed(self, key, *args):
+    #print("key pressed:", key, args)
+    if key == b'\x1b':
       #sys.exit(0)
       glutLeaveMainLoop()
-    elif key == 'p':
+    elif key == b'p':
       self.points = not self.points
       self.lines = not self.lines
-    elif key == ' ':
+    elif key == b' ':
       self.init_selfies()
-    elif key == 'i':
+    elif key == b'i':
       self.inverted = 1.0 - self.inverted
-    elif key == 'f':
+    elif key == b'f':
       self.togglefullscreen()
-    elif key == 't':
+    elif key == b't':
       self.usetexture = not self.usetexture
-    elif key == '0':
+    elif key == b'0':
       self.writePNG()
     else:
       self.autorotate = not self.autorotate
-      print( "autorotation", self.autorotate )
+      print("autorotation", self.autorotate)
         
   def keyReleased( self, *args ):
     pass
