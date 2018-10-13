@@ -233,8 +233,9 @@ class Context():
       ]
     glsls = {}
     for f in files:
-      fname = "{}.glsl".format(f)
-      with open( fname, "r" ) as fin:
+      fname = os.path.join(
+        "shaders", "{}.glsl".format(f))
+      with open(fname, "r") as fin:
         s = fin.read()
         if "vertex" in fname:
           c1, c2 = self.c1, self.c2
